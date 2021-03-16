@@ -8,12 +8,12 @@
 int const DOT_LENGTH = 500; // How long a dot is on for, in milliseconds.
 int const DASH_LENGTH = DOT_LENGTH * 3; // A dash is defined as three dots in length.
 
-int led1 = D6; // Instead of referring to the led on pin D7, it'll simply be referred to as 'led'.
+int led1 = D0; // Instead of referring to the led on pin D7, it'll simply be referred to as 'led'.
 int led2 = D7;
 
 // Procedure delays by the length of a dot times three (space between parts of a letter).
 void letterGap() {
-    delay(DOT_LENGTH * 3);
+    delay(DASH_LENGTH);
 }
 
 // Procedure delays by the length of a dot times seven (space between words).
